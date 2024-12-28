@@ -1,0 +1,204 @@
+{
+    "testimoni": [
+        {
+            "img": "img/testimonials/1.png",
+            "nama": "Andi Susanto",
+            "profesi": "Desainer Grafis",
+            "review_star": 5,
+            "ulasan": "Kursus desain grafis di AYO KURSUS sangat membantu saya untuk mengembangkan keterampilan saya dalam bidang desain.",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Budi Prasetyo",
+            "profesi": "Programmer",
+            "review_star": 4,
+            "ulasan": "Materi yang diberikan sangat mendalam dan mudah dipahami. Pengajaran yang efektif!",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Cynthia Tan",
+            "profesi": "Marketer",
+            "review_star": 5,
+            "ulasan": "Kursus Bahasa Inggris sangat menyenangkan dan mudah dipelajari. Saya merasa lebih percaya diri dalam berkomunikasi.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/1.png",
+            "nama": "Dimas Setiawan",
+            "profesi": "Fotografer",
+            "review_star": 5,
+            "ulasan": "Kursus komputer dasar sangat bermanfaat bagi saya yang baru memulai di dunia digital.",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Elena Rini",
+            "profesi": "Arsitek",
+            "review_star": 4,
+            "ulasan": "Saya mendapatkan banyak wawasan baru dalam kursus desain grafis ini. Hanya perlu lebih banyak latihan.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/1.png",
+            "nama": "Farhan Pramudia",
+            "profesi": "Software Developer",
+            "review_star": 5,
+            "ulasan": "Pengalaman belajar di AYO KURSUS sangat menyenangkan. Materinya lengkap dan instruktur sangat berpengalaman.",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Gina Melati",
+            "profesi": "Pengusaha",
+            "review_star": 4,
+            "ulasan": "Kursus Bahasa Mandarin memberikan pemahaman yang baik tentang bahasa dan budaya. Sangat membantu dalam bisnis internasional.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/1.png",
+            "nama": "Hadi Pranata",
+            "profesi": "Dokter",
+            "review_star": 5,
+            "ulasan": "Kursus Bahasa Jepang sangat membantu dalam komunikasi dengan pasien Jepang. Terima kasih AYO KURSUS!",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Ika Pertiwi",
+            "profesi": "Guru",
+            "review_star": 4,
+            "ulasan": "Kursus Bahasa Korea sangat menarik dan memotivasi saya untuk belajar lebih banyak tentang budaya Korea.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/1.png",
+            "nama": "Joko Supriadi",
+            "profesi": "Manager",
+            "review_star": 5,
+            "ulasan": "Saya sangat puas dengan kursus desain grafis yang saya ikuti. Pengajaran yang profesional dan mudah dipahami.",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Krisna Dwi",
+            "profesi": "Penulis",
+            "review_star": 5,
+            "ulasan": "Kursus Bahasa Inggris sangat bermanfaat untuk meningkatkan kemampuan menulis dan berbicara saya.",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Lina Wijaya",
+            "profesi": "Pengacara",
+            "review_star": 4,
+            "ulasan": "Saya belajar banyak tentang penggunaan komputer dalam dunia profesional melalui kursus ini.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/1.png",
+            "nama": "Maya Andini",
+            "profesi": "Content Creator",
+            "review_star": 5,
+            "ulasan": "Kursus Bahasa Arab sangat membantu saya untuk berkomunikasi lebih baik dengan audiens internasional.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Nina Purnama",
+            "profesi": "Designer",
+            "review_star": 4,
+            "ulasan": "Materi yang diberikan sangat aplikatif dan memudahkan saya untuk mengimplementasikannya di pekerjaan.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/1.png",
+            "nama": "Omar Luthfi",
+            "profesi": "Freelancer",
+            "review_star": 5,
+            "ulasan": "Kursus programmer sangat membantu saya untuk memperdalam kemampuan coding dan pengembangan aplikasi.",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Pandu Prasetyo",
+            "profesi": "Pemilik Bisnis",
+            "review_star": 4,
+            "ulasan": "Kursus Bahasa Korea sangat berguna untuk bisnis ekspor saya. Pengajaran yang jelas dan mudah dipahami.",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Qori Amelia",
+            "profesi": "Asisten Riset",
+            "review_star": 5,
+            "ulasan": "Kursus Bahasa Mandarin sangat menarik dan meningkatkan kemampuan komunikasi saya dalam lingkungan internasional.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/1.png",
+            "nama": "Randi Setiawan",
+            "profesi": "Petugas Keamanan",
+            "review_star": 4,
+            "ulasan": "Kursus Bahasa Jepang cukup membantu saya untuk memahami dasar-dasar komunikasi dengan kolega Jepang.",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Siti Rahmawati",
+            "profesi": "Fotografer",
+            "review_star": 5,
+            "ulasan": "Kursus Bahasa Inggris membantu saya dalam memahami teknik komunikasi yang lebih baik dalam proyek internasional.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/1.png",
+            "nama": "Teguh Santoso",
+            "profesi": "Web Developer",
+            "review_star": 4,
+            "ulasan": "Kursus komputer dasar memberikan pemahaman yang lebih baik tentang penggunaan software yang saya perlukan dalam pekerjaan.",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Umi Fitriani",
+            "profesi": "Ibu Rumah Tangga",
+            "review_star": 5,
+            "ulasan": "Kursus Bahasa Inggris sangat membantu saya dalam memperbaiki kemampuan bahasa saya untuk kegiatan sehari-hari.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/1.png",
+            "nama": "Vivi Anggraini",
+            "profesi": "Chef",
+            "review_star": 4,
+            "ulasan": "Kursus desain grafis sangat membantu dalam menciptakan menu digital untuk restoran saya.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Willy Prayoga",
+            "profesi": "Teknisi",
+            "review_star": 5,
+            "ulasan": "Kursus programmer memberikan saya pemahaman yang lebih baik tentang pemrograman dan pengembangan sistem.",
+            "gender": "male"
+        },
+        {
+            "img": "img/testimonials/1.png",
+            "nama": "Xena Dewi",
+            "profesi": "Model",
+            "review_star": 4,
+            "ulasan": "Kursus Bahasa Arab sangat bermanfaat untuk pekerjaan saya dalam dunia fashion internasional.",
+            "gender": "female"
+        },
+        {
+            "img": "img/testimonials/2.png",
+            "nama": "Yosefina Lestari",
+            "profesi": "Guru Bahasa",
+            "review_star": 5,
+            "ulasan": "Kursus Bahasa Korea memberikan pengetahuan baru yang sangat berguna untuk kegiatan pengajaran saya.",
+            "gender": "female"
+        }
+    ]
+}
