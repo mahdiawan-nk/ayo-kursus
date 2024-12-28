@@ -1,0 +1,118 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "name": "kursus-komputer",
+            "title": "Kursus Komputer",
+            "description": "Program Pembelajaran Kursus Komputer",
+            "image": "img/course-comp.png",
+            "types": [
+                {
+                    "id": 1,
+                    "title": "Komputer Dasar",
+                    "description": "Pengenalan dasar-dasar penggunaan komputer untuk pemula.",
+                    "description_other": "Kursus ini mencakup pengenalan perangkat keras, perangkat lunak, dan dasar-dasar penggunaan aplikasi.",
+                    "image": "img/course-comp.png",
+                    "points": [
+                        "Mengoperasikan sistem operasi dasar",
+                        "Penggunaan perangkat lunak perkantoran",
+                        "Pengetahuan tentang internet dan browsing"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Desain Grafis",
+                    "description": "Pelajari keterampilan desain grafis menggunakan alat profesional.",
+                    "description_other": "Kursus ini dirancang untuk membantu Anda memahami dasar-dasar desain grafis dan penggunaan perangkat lunak seperti Photoshop dan Illustrator.",
+                    "image": "img/course-comp.png",
+                    "points": [
+                        "Mendesain poster dan brosur",
+                        "Edit foto dan manipulasi gambar",
+                        "Pembuatan logo dan identitas merek"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Programmer",
+                    "description": "Belajar dasar-dasar pemrograman dan pengembangan perangkat lunak.",
+                    "description_other": "Kursus ini mencakup pengenalan algoritma, pemrograman dasar, dan pengembangan aplikasi.",
+                    "image": "img/course-comp.png",
+                    "points": [
+                        "Pemrograman dengan Python",
+                        "Pembuatan aplikasi berbasis web",
+                        "Pengenalan konsep database"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "kursus-bahasa",
+            "title": "Kursus Bahasa",
+            "description": "Program pembelajaran kursus Bahasa",
+            "image": "img/course-comp.png",
+            "types": [
+                {
+                    "id": 1,
+                    "title": "Bahasa Inggris",
+                    "description": "Kuasai bahasa Inggris untuk kebutuhan sehari-hari dan profesional.",
+                    "description_other": "Kursus ini mencakup keterampilan berbicara, mendengarkan, membaca, dan menulis.",
+                    "image": "img/course-comp.png",
+                    "points": [
+                        "Pengucapan yang benar",
+                        "Penulisan email profesional",
+                        "Latihan percakapan"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Bahasa Mandarin",
+                    "description": "Belajar bahasa Mandarin dari dasar hingga lanjutan.",
+                    "description_other": "Kursus ini mencakup pengenalan karakter Mandarin dan latihan percakapan.",
+                    "image": "img/course-comp.png",
+                    "points": [
+                        "Pengenalan karakter Hanzi",
+                        "Penggunaan dalam bisnis",
+                        "Latihan berbicara sehari-hari"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Bahasa Jepang",
+                    "description": "Pelajari bahasa Jepang dengan pendekatan yang interaktif.",
+                    "description_other": "Kursus ini dirancang untuk membantu Anda memahami tata bahasa dan percakapan dasar.",
+                    "image": "img/course-comp.png",
+                    "points": [
+                        "Belajar Hiragana dan Katakana",
+                        "Percakapan dasar",
+                        "Pengenalan budaya Jepang"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Bahasa Arab",
+                    "description": "Belajar bahasa Arab untuk kebutuhan sehari-hari dan agama.",
+                    "description_other": "Kursus ini mencakup keterampilan membaca, menulis, dan berbicara bahasa Arab.",
+                    "image": "img/course-comp.png",
+                    "points": [
+                        "Membaca Al-Qur'an dengan tajwid",
+                        "Percakapan dasar",
+                        "Penulisan huruf Arab"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Bahasa Korea",
+                    "description": "Belajar bahasa Korea untuk percakapan dan budaya.",
+                    "description_other": "Kursus ini dirancang untuk membantu Anda memahami tata bahasa dan percakapan sehari-hari.",
+                    "image": "img/course-comp.png",
+                    "points": [
+                        "Belajar Hangul",
+                        "Percakapan dasar",
+                        "Pengenalan budaya Korea"
+                    ]
+                }
+            ]
+        }
+    ]
+}
