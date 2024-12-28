@@ -2,10 +2,10 @@
     <header id="header" class="header d-flex align-items-center justify-content-center sticky-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-center">
             <router-link to="/" class="logo d-flex align-items-center">
-                <img src="img/logo.png" alt="">
+                <img src="img/ayo-kursus.png" alt="">
                 <h1 class="sitename ms-2">ayokursus.com</h1>
             </router-link>
-            
+
         </div>
     </header>
 </template>
@@ -36,3 +36,13 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+.header {
+    background-color: #d546d9;
+}
+
+.header h1 {
+    color: #fff;
+}
+</style>
