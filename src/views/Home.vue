@@ -54,7 +54,7 @@
             <div class="container">
 
                 <div v-for="list in courses" :key="list" class="row my-5 p-4 rounded-start-2"
-                    style="background-color: #d546d9">
+                    style="background-color: rgb(37, 150, 190)">
                     <div class="col-lg-6 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="100">
                         <img :src="list.image" class="img-fluid w-75 d-block mx-auto" alt="">
                     </div>
@@ -67,35 +67,10 @@
                             <li v-for="item in list.types" :key="item"><i class="bi bi-check-circle"></i> <span>{{
                                 item.title }}</span></li>
                         </ul>
-                        <router-link :to="{ name: 'Course', params: { type: list.name } }" class="read-more"><span>Read
-                                More</span><i class="bi bi-arrow-right"></i></router-link>
+                        <router-link :to="{ name: 'Course', params: { type: list.name } }" class="read-more shadow" ><span>Selengkapnya</span><i class="bi bi-arrow-right"></i></router-link>
                     </div>
 
                 </div>
-                <!-- <div class="row gy-4 p-2 rounded-start-2" style="background-color: #d546d9">
-
-                    <div class="col-lg-6 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                        <img src="img/course-lang.png" class="img-fluid w-75 d-block mx-auto" alt="">
-                    </div>
-
-                    <div class="col-lg-6 order-2 order-lg-2 content" data-aos="fade-up" data-aos-delay="200">
-                        <h3>Kursus Bahasa</h3>
-                        <p class="fst-italic">
-                            Program pembelajaran kursus Bahasa yaitu
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle"></i> <span>Bahasa Inggris</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Bahasa Mandarin</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Bahasa Jepang</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Bahasa Arab</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Bahasa Korea</span></li>
-                        </ul>
-                        <router-link :to="{ name: 'Course', params: { type: 'kursus-bahasa' } }" class="read-more"><span>Read More</span><i
-                                class="bi bi-arrow-right"></i></router-link>
-                    </div>
-
-
-                </div> -->
             </div>
 
         </section>
@@ -125,7 +100,7 @@
         </section><!-- /Features Section -->
 
         <!-- Courses Section -->
-        <section id="courses" class="events section" style="background-color: #d546d9">
+        <section id="courses" class="events section" style="background-color: rgb(37, 150, 190)">
 
             <!-- Section Title -->
             <div class="container section-title text-center" data-aos="fade-up">
@@ -243,6 +218,7 @@ export default {
                 { title: 'Program Belajar Kelas dan Privat (1 Siswa 1 Guru)', icon: 'bi-person-fill' },
                 { title: 'Belajar Bisa Offline dan Online', icon: 'bi-globe' },
                 { title: 'Belajar Bisa Dikantor Atau Guru Datang Kerumah', icon: 'bi-globe' },
+                { title: 'Bisa belajar dimanapun dan kapanpun', icon: 'bi-globe' },
             ],
             portofolioKursus: portofolioData.portofolio,
             swiperConfig: {
@@ -304,7 +280,7 @@ export default {
     height: 100%;
     object-fit: contain;
     z-index: 1;
-    background: purple;
+    background: rgb(37, 150, 190);
 }
 
 .swiper {
@@ -334,7 +310,12 @@ export default {
         height: 100%;
         object-fit: fill;
         z-index: 1;
-        background: purple;
+        background: rgb(37, 150, 190);
     }
+}
+.about .content ul i {
+    font-size: 1.25rem;
+    margin-right: 4px;
+    color: white;
 }
 </style>
