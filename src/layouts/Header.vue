@@ -3,6 +3,7 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-center">
             <router-link to="/" class="logo d-flex align-items-center">
                 <img src="/img/logo-1.png" alt="">
+                <div class="overlay"></div>
                 <!-- <h1 class="sitename ms-2">ayokursus.com</h1> -->
             </router-link>
 
@@ -39,10 +40,12 @@ export default {
 
 <style scoped>
 .header {
-    background-color: #d546d9;
+    background-color: rgb(37, 150, 190);
+
 }
 
 .header h1 {
     color: #fff;
 }
+
 </style>
