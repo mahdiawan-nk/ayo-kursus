@@ -72,7 +72,7 @@ export default {
 
 <style>
 .Toastify__toast {
-    background: #d546d9;
+    background: rgb(37, 150, 190);
     height: 120px;
     border-radius: 4px;
     box-shadow: 0 1px 10px 0 #0000001a, 0 2px 15px 0 #0000000d;
