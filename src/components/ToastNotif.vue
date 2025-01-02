@@ -47,11 +47,11 @@ export default {
             const content = `
         <div class="d-flex align-items-center">
           <div class="me-1">
-            <img src="img/ayo-kursus.png" alt="Logo" class="rounded-circle mx-auto d-block" style="width: 50px; height: 50px; object-fit: cover;" />
+            <img src="/img/ayo-kursus.png" alt="Logo" class="rounded-circle mx-auto d-block" style="width: 50px; height: 50px; object-fit: cover;" />
           </div>
           <div class="d-flex flex-column mx-3">
-            <h3 class="fs-5 fw-bold mb-1 text-white">${randomRegistrant.name}</h3>
-            <span class="mb-1 text-white">Telah mendaftar program kursus ${randomRegistrant.course} ${randomRegistrant.time}</span>
+            <h3 class=" fw-bold mb-1 text-white" style="font-size: 14px;">${randomRegistrant.name}</h3>
+            <span class="mb-1 text-white" style="font-size: 12px;">Telah mendaftar program kursus ${randomRegistrant.course} ${randomRegistrant.time}</span>
           </div>
         </div>
       `;
@@ -73,7 +73,7 @@ export default {
 <style>
 .Toastify__toast {
     background: #d546d9;
-    height: 145px;
+    height: 120px;
     border-radius: 4px;
     box-shadow: 0 1px 10px 0 #0000001a, 0 2px 15px 0 #0000000d;
     box-sizing: border-box;
@@ -92,12 +92,27 @@ export default {
 }
 
 .Toastify__toast-body {
-    height: 75px;
+    height: 50px;
     align-items: center;
     display: flex;
     flex: 1 1 auto;
     margin: auto 0;
     padding: 10px;
     white-space: pre-wrap;
+}
+
+.Toastify__toast-container {
+    left: 10px;
+    margin-top: 75px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .Toastify__toast-container {
+        left: 10px;
+        margin-top: 75px;
+        padding: 0;
+        width: 70vw;
+    }
 }
 </style>
