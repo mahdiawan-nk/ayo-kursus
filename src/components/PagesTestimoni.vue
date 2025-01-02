@@ -6,7 +6,7 @@
             <p>Testimoni Program Kursus</p>
         </div><!-- End Section Title -->
 
-        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100" style="background-color: #d546d9">
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100" style="background-color: rgb(37, 150, 190)">
 
             <div class="swiper init-swiper">
 
