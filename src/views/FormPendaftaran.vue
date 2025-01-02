@@ -3,7 +3,7 @@
         <!-- Page Title -->
         <section id="hero" class="hero section dark-background" :style="{ 'min-height': '30vh' }">
 
-            <img src="img/bg-2.png" alt="" data-aos="fade-in">
+            <img src="/img/slider/utama.jpg" alt="" data-aos="fade-in" style="object-fit: contain">
 
             <div class="container text-center" :style="{ 'margin-top': '200px' }">
                 <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
