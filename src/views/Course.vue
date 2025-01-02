@@ -12,6 +12,7 @@
                 </div>
 
             </section><!-- /Hero Section -->
+
             <section id="features" class="features section mt-4">
 
                 <div class="container">
@@ -23,7 +24,7 @@
                                 :class="{ 'bg-ungu': typeCourse == list.name }">
                                 <h3><a href="javascript:void(0)" class="stretched-link"
                                         :class="{ 'text-white': typeCourse == list.name }" @click="showDetail(list)">{{
-                                        list.title }}</a></h3>
+                                            list.title }}</a></h3>
                             </div>
                         </div>
                     </div>
@@ -55,7 +56,8 @@
                             <div v-if="timeLeft > 0" class="countdown fw-bold my-3 fs-1">
                                 Promo Berlaku {{ countdownText }} Lagi
                             </div>
-                            <router-link to="/daftar" class="read-more" style="background-color: #d546d9"><span>Daftar
+                            <router-link to="/daftar" class="read-more"
+                                style="background-color:rgb(37, 150, 190)"><span>Daftar
                                     Sekarang</span><i class="bi bi-arrow-right"></i></router-link>
                         </div>
                     </div>
@@ -64,16 +66,40 @@
 
 
             </section>
+            <section id="features" class="features section">
+                <!-- Section Title -->
+                <div class="container section-title text-center" data-aos="fade-up">
+                    <!-- <h2>Courses</h2> -->
+                    <p>Keunggulan Program</p>
+                </div><!-- End Section Title -->
+                <div class="container">
+
+                    <div class="row gy-4">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <card-keunggulan-program v-for="keunggulan in keunggulanProgram" :key="keunggulan.title"
+                                    :title="keunggulan.title" :icon="keunggulan.icon"></card-keunggulan-program>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
         </main>
 
     </div>
 </template>
 
 <script>
+import CardKeunggulanProgram from '../components/CardKeunggulanProgram.vue'
+
 import coursesData from '@/assets/course.json';
 export default {
     name: 'CourseView',
     components: {
+        CardKeunggulanProgram,
     },
     data() {
         return {
@@ -81,7 +107,19 @@ export default {
             endTime: null, // Waktu akhir promo
             typeCourse: 'komputer-dasar',
             courses: coursesData.courses,
-            selectedType: []
+            selectedType: [],
+            keunggulanProgram: [
+                { title: 'Bersertifikat Resmi', icon: 'bi-award-fill' },
+                { title: 'Mempunyai Legalitas Izin Dinas Resmi', icon: 'bi-file-earmark-check-fill' },
+                { title: 'Program Kursus Full Praktek 100%', icon: 'bi-clipboard-check-fill' },
+                { title: 'Waktu Belajar Menyesuaikan', icon: 'bi-clock-fill' },
+                { title: 'Kelas Maksimal 12 Orang', icon: 'bi-people-fill' },
+                { title: 'Fasilitas Kursus Komputer yang Lengkap', icon: 'bi-pc-display' },
+                { title: 'Program Belajar Kelas dan Privat (1 Siswa 1 Guru)', icon: 'bi-person-fill' },
+                { title: 'Belajar Bisa Offline dan Online', icon: 'bi-globe' },
+                { title: 'Belajar Bisa Dikantor Atau Guru Datang Kerumah', icon: 'bi-globe' },
+                { title: 'Bisa belajar dimanapun dan kapanpun', icon: 'bi-globe' },
+            ],
         };
     },
     computed: {
@@ -142,7 +180,7 @@ export default {
 
 <style scoped>
 .bg-ungu {
-    background-color: #d546d9;
+    background-color: rgb(37, 150, 190);
 }
 
 .bounce-enter-active,
