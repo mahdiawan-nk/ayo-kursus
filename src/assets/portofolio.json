@@ -3,86 +3,59 @@
         {
             "id": 1,
             "name": "portofolio-1",
-            "title": "Kursus Komputer Dasar (Microsoft Office)",
+            "title": "Kursus Bahasa Inggris",
             "description": "Online",
-            "image": "img/course-comp.png"
+            "image": "img/portofolio/portofolio1.jpg"
         },
         {
             "id": 2,
             "name": "portofolio-2",
-            "title": "Kursus Desain Grafis",
+            "title": "Kursus Bahasa Arab",
             "description": "Offline",
-            "image": "img/course-comp.png"
+            "image": "img/portofolio/portofolio2.jpg"
         },
         {
             "id": 3,
             "name": "portofolio-3",
-            "title": "Kursus Programmer",
+            "title": "Kursus Bahasa Mandarin",
             "description": "Online",
-            "image": "img/course-comp.png"
+            "image": "img/portofolio/portofolio3.jpg"
         },
         {
             "id": 4,
             "name": "portofolio-4",
-            "title": "Kursus Bahasa Inggris",
+            "title": "Kursus Komputer Microsoft Office",
             "description": "Offline",
-            "image": "img/course-lang.png"
+            "image": "img/portofolio/portofolio4.jpg"
         },
         {
             "id": 5,
             "name": "portofolio-5",
-            "title": "Kursus Bahasa Mandarin",
+            "title": "Kursus Bahasa Jepang",
             "description": "Online",
-            "image": "img/course-lang.png"
+            "image": "img/portofolio/portofolio5.jpg"
         },
         {
             "id": 6,
             "name": "portofolio-6",
-            "title": "Kursus Bahasa Jepang",
+            "title": "Kursus Desain Grafis",
             "description": "Offline",
-            "image": "img/course-lang.png"
+            "image": "img/portofolio/portofolio6.jpg"
         },
         {
             "id": 7,
             "name": "portofolio-7",
-            "title": "Kursus Bahasa Arab",
+            "title": "Kursus Komputer Persiapan CPNS",
             "description": "Online",
-            "image": "img/course-lang.png"
+            "image": "img/portofolio/portofolio7.jpg"
         },
         {
             "id": 8,
             "name": "portofolio-8",
-            "title": "Kursus Bahasa Korea",
+            "title": "Kursus Bahasa Mandarin",
             "description": "Offline",
-            "image": "img/course-lang.png"
-        },
-        {
-            "id": 9,
-            "name": "portofolio-9",
-            "title": "Kursus Komputer Dasar (Microsoft Office)",
-            "description": "Online",
-            "image": "img/course-comp.png"
-        },
-        {
-            "id": 10,
-            "name": "portofolio-10",
-            "title": "Kursus Desain Grafis",
-            "description": "Offline",
-            "image": "img/course-comp.png"
-        },
-        {
-            "id": 11,
-            "name": "portofolio-11",
-            "title": "Kursus Programmer",
-            "description": "Online",
-            "image": "img/course-comp.png"
-        },
-        {
-            "id": 12,
-            "name": "portofolio-12",
-            "title": "Kursus Bahasa Inggris",
-            "description": "Offline",
-            "image": "img/course-lang.png"
+            "image": "img/portofolio/portofolio8.jpg"
         }
+
     ]
 }
