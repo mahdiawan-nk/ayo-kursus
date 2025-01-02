@@ -2,30 +2,48 @@
     <main class="main">
 
         <!-- Hero Section -->
-        <section id="hero" class="hero section dark-background" :style="{ 'min-height': '100vh' }">
+        <section id="hero" class="hero section dark-background">
+            <div class="swiper init-swiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide d-flex align-items-center">
+                        <img src="img/slider/utama.jpg" alt="" data-aos="fade-in">
+                    </div>
+                    <div class="swiper-slide d-flex align-items-center">
+                        <img src="img/slider/utama1.jpg" alt="" data-aos="fade-in" class="">
+                    </div>
+                    <div class="swiper-slide d-flex align-items-center">
+                        <img src="img/slider/utama2.jpg" alt="" data-aos="fade-in" class="">
+                    </div>
+                </div>
+            </div>
+            
 
-            <img src="img/bg-2.png" alt="" data-aos="fade-in">
-
+        </section><!-- /Hero Section -->
+        <section id="about" class="about section">
+            <div class="container section-title text-center" data-aos="fade-up">
+                <!-- <h2>Courses</h2> -->
+                <p>Ayo Kursus</p>
+            </div>
             <div class="container text-center">
-                <h2 data-aos="fade-up" data-aos-delay="100" style="color: #d546d9">AYO KURSUS</h2>
-                <p data-aos="fade-up" data-aos-delay="200">
+                <!-- <h2 data-aos="fade-up" data-aos-delay="100" style="color: #d546d9">AYO KURSUS</h2> -->
+                <p data-aos="fade-up" data-aos-delay="200" class="fst-italic fs-3">
                     Ayo Kursus merupakan program kursus bagi pelajar hingga umum yang bertujuan untuk
-                    meningkatkan potensi diri atau sosfkill dibidang kompetensi teretntu sesuai minat dan bakat.
-                    Program ayo kursus ini nantinya bisa menjadi solusi bagi siswa yang merasa kesusahan dalam
-                    berbagai masalah tertentu, bahkan nantinya bisa untuk bekal ketika ingin memasuki dunia kerja.
+                    meningkatkan potensi diri atau sosfkill dibidang kompetensi teretntu sesuai minat dan
+                    bakat.
+                    Program ayo kursus ini nantinya bisa menjadi solusi bagi siswa yang merasa kesusahan
+                    dalam
+                    berbagai masalah tertentu, bahkan nantinya bisa untuk bekal ketika ingin memasuki dunia
+                    kerja.
                     Adapun program kursus yang dimaksud disini adalah kursus komputer dengan kemampuan
-                    kompetensi sebagai berikut : komputer dasar (Microsoft office), Desain Grafis , Programmer. Dan
-                    Kursus Bahasa asing seperti kursus Bahasa inggris, Bahasa mandarin, Bahasa jepang, Bahasa arab,
+                    kompetensi sebagai berikut : komputer dasar (Microsoft office), Desain Grafis ,
+                    Programmer. Dan
+                    Kursus Bahasa asing seperti kursus Bahasa inggris, Bahasa mandarin, Bahasa jepang,
+                    Bahasa arab,
                     Bahasa korea.
 
                 </p>
-                <!-- <div class=" mt-4" data-aos="fade-up" data-aos-delay="300">
-                    <a href="courses.html" class="btn-get-started">Get Started</a>
-                </div> -->
             </div>
-
-        </section><!-- /Hero Section -->
-
+        </section>
         <!-- About Section -->
         <section id="about" class="about section">
             <div class="container section-title text-center" data-aos="fade-up">
@@ -38,7 +56,7 @@
                 <div v-for="list in courses" :key="list" class="row my-5 p-4 rounded-start-2"
                     style="background-color: #d546d9">
                     <div class="col-lg-6 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                        <img :src="list.image" class="img-fluid w-50 d-block mx-auto" alt="">
+                        <img :src="list.image" class="img-fluid w-75 d-block mx-auto" alt="">
                     </div>
                     <div class="col-lg-6 order-2 order-lg-2 content" data-aos="fade-up" data-aos-delay="200">
                         <h3>{{ list.title }}</h3>
@@ -47,7 +65,7 @@
                         </p>
                         <ul>
                             <li v-for="item in list.types" :key="item"><i class="bi bi-check-circle"></i> <span>{{
-                                    item.title }}</span></li>
+                                item.title }}</span></li>
                         </ul>
                         <router-link :to="{ name: 'Course', params: { type: list.name } }" class="read-more"><span>Read
                                 More</span><i class="bi bi-arrow-right"></i></router-link>
@@ -118,7 +136,7 @@
 
                 <div class="row">
                     <card-portofolio-kursus v-for="portofolio in portofolioKursus" :key="portofolio.title"
-                        :title="portofolio.title" :subtitle="'Kursus Secara '+portofolio.description"
+                        :title="portofolio.title" :subtitle="'Kursus Secara ' + portofolio.description"
                         :image="portofolio.image"></card-portofolio-kursus>
 
                 </div>
@@ -202,7 +220,8 @@ import CardPortofolioKursus from '../components/CardPortofolioKursus.vue'
 import PagesTestimoni from '../components/PagesTestimoni.vue'
 import coursesData from '@/assets/course.json';
 import portofolioData from '@/assets/portofolio.json';
-
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 // const coursesData = require('src\assets\course,json');
 export default {
     name: 'HomeView',
@@ -225,9 +244,37 @@ export default {
                 { title: 'Belajar Bisa Offline dan Online', icon: 'bi-globe' },
                 { title: 'Belajar Bisa Dikantor Atau Guru Datang Kerumah', icon: 'bi-globe' },
             ],
-            portofolioKursus: portofolioData.portofolio
+            portofolioKursus: portofolioData.portofolio,
+            swiperConfig: {
+                direction: 'horizontal',
+                loop: true,
+                speed: 600,
+                autoplay: {
+                    delay: 2000,
+                },
+                slidesPerView: 'auto',
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        // spaceBetween: 40,
+                    },
+                    1200: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                },
+            },
         }
-    }
+    },
+    mounted() {
+        const swiperElement = this.$el.querySelector('.swiper');
+        new Swiper(swiperElement, this.swiperConfig);
+    },
 }
 </script>
 
@@ -236,5 +283,58 @@ export default {
 .content p,
 .content ul li span {
     color: white;
+}
+
+.hero {
+    width: 100%;
+    min-height: 95vh;
+    position: relative;
+    padding: 81px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-color);
+}
+
+.hero img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+    background: purple;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: relative;
+    z-index: 2;
+    /* Place text above image */
+    padding: 20px;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .hero img {
+        position: absolute;
+        inset: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        z-index: 1;
+        background: purple;
+    }
 }
 </style>
