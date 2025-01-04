@@ -8,7 +8,6 @@
                 <img src="/img/slider/utama1.jpg" alt="" data-aos="fade-in" style="object-fit: contain">
 
                 <div class="container text-center" :style="{ 'margin-top': '200px' }">
-                    <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
                 </div>
 
             </section><!-- /Hero Section -->
@@ -40,8 +39,8 @@
                             <img :src="'/' + selectedType.image" class="img-fluid" alt="">
                         </div>
                         <div class="col-lg-6 order-2 order-lg-2 content" data-aos="fade-up" data-aos-delay="200">
-                            <h3 style="font-size: 1.8rem">{{ selectedType.title }}</h3>
-                            <p class="">
+                            <h3 style="font-size: 1.8rem;color:rgb(37, 150, 190)">{{ selectedType.title }}</h3>
+                            <p class="" style="text-align: justify;">
                                 {{ selectedType.description }}
                             </p>
                             <ul>
@@ -54,10 +53,10 @@
                                 {{ selectedType.description_other }}
                             </p>
                             <div v-if="timeLeft > 0" class="countdown fw-bold my-3 fs-1">
-                                Promo Berlaku {{ countdownText }} Lagi
+                                Ambil Promo {{ countdownText }}
                             </div>
                             <router-link to="/daftar" class="read-more"
-                                style="background-color:rgb(37, 150, 190)"><span>Daftar
+                                style="background-color:#2b960b;"><span>Daftar
                                     Sekarang</span><i class="bi bi-arrow-right"></i></router-link>
                         </div>
                     </div>
@@ -66,20 +65,20 @@
 
 
             </section>
-            <section id="features" class="features section">
+            <section id="features" class="features section mb-5" v-show="selectedType.name == typeCourse">
                 <!-- Section Title -->
                 <div class="container section-title text-center" data-aos="fade-up">
                     <!-- <h2>Courses</h2> -->
-                    <p>Keunggulan Program</p>
+                    <p>Keunggulan Kursus</p>
                 </div><!-- End Section Title -->
                 <div class="container">
 
                     <div class="row gy-4">
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-8">
+                        <!-- <div class="col-lg-2"></div> -->
+                        <div class="col-lg-12">
                             <div class="row">
-                                <card-keunggulan-program v-for="keunggulan in keunggulanProgram" :key="keunggulan.title"
-                                    :title="keunggulan.title" :icon="keunggulan.icon"></card-keunggulan-program>
+                                <card-keunggulan-program v-for="keunggulan in selectedType.keunggulan" :key="keunggulan"
+                                    :title="keunggulan" :icon="''"></card-keunggulan-program>
                             </div>
                         </div>
                     </div>
@@ -103,7 +102,7 @@ export default {
     },
     data() {
         return {
-            timeLeft: 3 * 24 * 60 * 60 * 1000, // Waktu awal 3 hari dalam milidetik
+            timeLeft: 15 * 60 * 1000, // Waktu awal 3 hari dalam milidetik
             endTime: null, // Waktu akhir promo
             typeCourse: 'komputer-dasar',
             courses: coursesData.courses,
@@ -124,12 +123,10 @@ export default {
     },
     computed: {
         countdownText() {
-            const days = Math.floor(this.timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((this.timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((this.timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((this.timeLeft % (1000 * 60)) / 1000);
+            const minutes = Math.floor(this.timeLeft / (1000 * 60)); // Total menit tersisa
+            const seconds = Math.floor((this.timeLeft % (1000 * 60)) / 1000); // Total detik tersisa
 
-            return `${days}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
         },
         course() {
             const courseName = this.$route.params.type;
@@ -159,19 +156,19 @@ export default {
             this.typeCourse = type.name
         },
         initializeTimer() {
-            // Tetapkan waktu akhir ke 3 hari dari waktu akses saat ini
+            // Tetapkan waktu akhir ke 15 menit dari waktu akses saat ini
             const now = new Date();
-            this.endTime = new Date(now.getTime() + 3 * 24 * 60 * 60 * 1000); // Tambah 3 hari
+            this.endTime = new Date(now.getTime() + 15 * 60 * 1000); // Tambah 15 menit
             this.updateTimeLeft();
         },
         updateTimeLeft() {
             const now = new Date();
-            this.timeLeft = this.endTime - now > 0 ? this.endTime - now : 0;
+            this.timeLeft = this.endTime - now > 0 ? this.endTime - now : 0; // Hitung waktu tersisa
         },
         startCountdown() {
             setInterval(() => {
                 this.updateTimeLeft();
-            }, 1000);
+            }, 1000); // Perbarui hitungan mundur setiap detik
         },
     },
 
