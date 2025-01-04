@@ -26,7 +26,7 @@
             </div>
             <div class="container text-center">
                 <!-- <h2 data-aos="fade-up" data-aos-delay="100" style="color: #d546d9">AYO KURSUS</h2> -->
-                <p data-aos="fade-up" data-aos-delay="200" class="fst-italic fs-3">
+                <p data-aos="fade-up" data-aos-delay="200" class="fst-italic fs-3" style="text-align: justify">
                     Ayo Kursus merupakan program kursus bagi pelajar hingga umum yang bertujuan untuk
                     meningkatkan potensi diri atau sosfkill dibidang kompetensi teretntu sesuai minat dan
                     bakat.
@@ -59,7 +59,7 @@
                         <img :src="list.image" class="img-fluid w-75 d-block mx-auto" alt="">
                     </div>
                     <div class="col-lg-6 order-2 order-lg-2 content" data-aos="fade-up" data-aos-delay="200">
-                        <h3>{{ list.title }}</h3>
+                        <h3 style="color:#080807;">{{ list.title }}</h3>
                         <p class="fst-italic">
                             {{ list.description }}
                         </p>
@@ -67,7 +67,7 @@
                             <li v-for="item in list.types" :key="item"><i class="bi bi-check-circle"></i> <span>{{
                                 item.title }}</span></li>
                         </ul>
-                        <router-link :to="{ name: 'Course', params: { type: list.name } }" class="read-more shadow" ><span>Selengkapnya</span><i class="bi bi-arrow-right"></i></router-link>
+                        <router-link :to="{ name: 'Course', params: { type: list.name } }" class="read-more shadow" style="background-color: #2b960b;"><span>Selengkapnya</span><i class="bi bi-arrow-right"></i></router-link>
                     </div>
 
                 </div>
@@ -86,8 +86,8 @@
             <div class="container">
 
                 <div class="row gy-4">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8">
+                    <!-- <div class="col-lg-2"></div> -->
+                    <div class="col-lg-12">
                         <div class="row">
                             <card-keunggulan-program v-for="keunggulan in keunggulanProgram" :key="keunggulan.title"
                                 :title="keunggulan.title" :icon="keunggulan.icon"></card-keunggulan-program>
