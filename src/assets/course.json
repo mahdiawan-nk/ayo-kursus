@@ -18,6 +18,15 @@
                         "Microsoft Word : Pembelajaran mengenai kegiatan administrasi mulai dari dasar mengetik hingga laporan. Seperti : latihgan mengetik dengan benar dan cepat, pembuatan surat, gaya penulisan laporan yang baik dan benar hingga pengelolaan laporan",
                         "Microsoft Excel : Pembelajaran mengenai pengolahan data, mulai dari pembelajaran dasar seperti pembuatan tabel, grafik, sampai pada pengenalan rumus excel dari dasar hingga rumus kombinasi lanjutan seperti SUM, AVERAGE, COUNT, MIN, MAX, Fungsi SUMIF, IF, Vlookup / Hlookup, Pivot dll, yang nantinya berguna untuk dunia kerja.",
                         "Microsoft Power Point : Pembelajaran mengenai cara membuat slide presentasi yang menarik dan efektif untuk komunikasi visual. Yang dimulai dari dasar hingga animasi presentasi."
+                    ],
+                    "keunggulan": [
+                        "Fulk praktek 100℅",
+                        "Fasilitas komputer disediakan",
+                        "Materi belajar siap untuk dunia kerja",
+                        "Tersedia kelas reguler dan privat (1 guru 1 siswa)",
+                        "Dapat sertifikat selesai kursus",
+                        "Bergaransi sampai mahir",
+                        "Bisa belajar dimanapun dan kapanpun"
                     ]
                 },
                 {
@@ -27,8 +36,15 @@
                     "description": "Di program ini, peserta akan mempelajari cara menggunakan berbagai aplikasi desain populer seperti Canva, CorelDRAW, Photoshop, Illustrator dan AutoCAD. Kursus ini dirancang untuk memberikan keterampilan praktis dalam membuat karya digital, seperti gambar, logo, desain banner, dan banyak lagi",
                     "description_other": "Cocok untuk semua usia, kursus ini membuka peluang bagi siapa saja yang ingin mengasah kreativitas dan keterampilan desain mereka di dunia digital!",
                     "image": "img/course/desaingrafis.jpg",
-                    "points": [
-                        
+                    "points": [],
+                    "keunggulan": [
+                        "Fulk praktek 100℅",
+                        "Fasilitas komputer disediakan",
+                        "Materi belajar siap untuk dunia kerja",
+                        "Tersedia kelas reguler dan privat (1 guru 1 siswa)",
+                        "Dapat sertifikat selesai kursus",
+                        "Bergaransi sampai mahir",
+                        "Bisa belajar dimanapun dan kapanpun"
                     ]
                 },
                 {
@@ -38,8 +54,15 @@
                     "description": "Program pembelajaran yaitu web development yang mana akan dimulai dari dasar pengenalan berbagai Bahasa pemograman seperti C++, Golang , HTML, CSS, JavaScript dan PHP native atau PHP Framework. Program ini bertujuan untuk pengnalan cara membuat website yang menarik dan interaktif. Yang dimulai dari tampilan desain web (Front End) sampai pada eksekusi source code pemograman (back end) serta pengenalan sampai kepada database. Siswa akan dibimbing sehingga nantinya akan bisa mengelola sebuah website yang dimulai dari website sederhana seperti company profile sampai pada website base data. Selain itu kursus ini juga mencakup strategi untuk membuat website yang menarik minat pengunjung, sehingga lebih sering dikunjungi. Dengan keterampilan ini, peserta akan siap membangun situs web yang kreatif dan fungsional di dunia digital!",
                     "description_other": "",
                     "image": "img/course/programmer.jpg",
-                    "points": [
-                        
+                    "points": [],
+                    "keunggulan": [
+                        "Fulk praktek 100℅",
+                        "Fasilitas komputer disediakan",
+                        "Materi belajar siap untuk dunia kerja",
+                        "Tersedia kelas reguler dan privat (1 guru 1 siswa)",
+                        "Dapat sertifikat selesai kursus",
+                        "Bergaransi sampai mahir",
+                        "Bisa belajar dimanapun dan kapanpun"
                     ]
                 }
             ]
@@ -58,8 +81,15 @@
                     "description": "Dalam kursus Bahasa Inggris ini, peserta akan belajar keterampilan dasar dan lanjutan, yang materi pembelajarannya mengenai Conversation & Grammer seperti membaca, mendengar, berbicara dan menulis. Dalam pembelajaran Bahasa Inggris ini ada beberapa level pembelajaran dimuali dari Program Beginner (Dasar), Intermediate (Menengah), Advanced (Atas).Program Bahasa inggris di ayo kursus terdapat pembelajaran Kelas Regular dan Privat ( 1 Guru 1 Siswa ), yang sistem belajarnya bisa offline dan online dengan belajar dikantor atau gfuru dating kerumah. ini dirancang untuk semua tingkat kemampuan dan menekankan pada percakapan sehari-hari serta tata bahasa yang tepat, sehingga peserta dapat berkomunikasi dengan percaya diri di lingkungan internasional. Untuk pembelajarannya dimulai dari SD – SMP – SMA – MAHASISWA – UMUM",
                     "description_other": "",
                     "image": "img/course/inggris.jpg",
-                    "points": [
-                       
+                    "points": [],
+                    "keunggulan": [
+                        "Pembelajaran 70% Conversation & 30% Grammar",
+                        "Memberikan pelayanan terbaik terhadap siswa",
+                        "Free konsultasi materi dan dilengkapi modul pembelajaran",
+                        "Berfokus pada praktek",
+                        "Tutor profesional dan berpengalaman",
+                        "Tersedia kelas reguler & privat (1 guru 1 siswa)",
+                        "Bisa belajar dimanapun dan kapanpun"
                     ]
                 },
                 {
@@ -69,8 +99,15 @@
                     "description": "Dalam kursus Bahasa Mandarin, peserta akan mempelajari pengucapan, karakter, dan struktur kalimat dasar sesuai tingkatan level yang dipelajari mulai dari level 1 sampai level 6. Program ini bertujuan untuk membekali peserta dengan keterampilan komunikasi yang diperlukan untuk berinteraksi di lingkungan berbahasa Mandarin, serta memberikan wawasan tentang budaya Tiongkok yang menarik. Program kursus Bahasa mandarin ini ada beberapa",
                     "description_other": "",
                     "image": "img/course/mandarin.jpg",
-                    "points": [
-                       
+                    "points": [],
+                    "keunggulan": [
+                        "Pembelajaran fokus pelafalan, menulisan, mendengarkan, dan dialog percakapan",
+                        "Memberikan pelayanan terbaik terhadap siswa",
+                        "Free konsultasi materi dan dilengkapi modul pembelajaran",
+                        "Berfokus pada praktek",
+                        "Tutor profesional dan berpengalaman",
+                        "Tersedia kelas reguler & privat (1 guru 1 siswa)",
+                        "Bisa belajar dimanapun dan kapanpun"
                     ]
                 },
                 {
@@ -80,8 +117,15 @@
                     "description": "Dalam program kursus Bahasa Jepang, peserta akan diperkenalkan pada hiragana, katakana, dan kanji sesuai dengan lever yang ada pada pembelajaran Bahasa jepang yaitu mulai level N5 – N1, serta mempelajari ungkapan-ungkapan dasar untuk berkomunikasi. Kursus Bahasa jepang ini juga mencakup aspek budaya Jepang yang penting, sehingga peserta dapat memahami konteks sosial dan tradisi yang terkait dengan bahasa",
                     "description_other": "",
                     "image": "img/course/jepang.jpg",
-                    "points": [
-                        
+                    "points": [],
+                    "keunggulan": [
+                        "Pembelajaran fokus pelafalan, menulisan, mendengarkan, dan dialog percakapan",
+                        "Memberikan pelayanan terbaik terhadap siswa",
+                        "Free konsultasi materi dan dilengkapi modul pembelajaran",
+                        "Berfokus pada praktek",
+                        "Tutor profesional dan berpengalaman",
+                        "Tersedia kelas reguler & privat (1 guru 1 siswa)",
+                        "Bisa belajar dimanapun dan kapanpun"
                     ]
                 },
                 {
@@ -91,8 +135,15 @@
                     "description": "Kursus Bahasa Arab mulai dari level 1 sampai level 5 akan memberikan peserta pemahaman tentang bahasa Arab. Mulai dari penghafalan kosa kata dalam Bahasa arab hingga fasih murajaah Bahasa arab dalam kehidupan sehari – hari. Program ini sangat cocok bagi mereka yang ingin menjelajahi dunia Arab atau berkarir di bidang yang berkaitan dengan negara-negara berbahasa Arab.",
                     "description_other": "",
                     "image": "img/course/arab.jpg",
-                    "points": [
-                        
+                    "points": [],
+                    "keunggulan": [
+                        "Pembelajaran fokus pelafalan, menulisan, mendengarkan, dan dialog percakapan",
+                        "Memberikan pelayanan terbaik terhadap siswa",
+                        "Free konsultasi materi dan dilengkapi modul pembelajaran",
+                        "Berfokus pada praktek",
+                        "Tutor profesional dan berpengalaman",
+                        "Tersedia kelas reguler & privat (1 guru 1 siswa)",
+                        "Bisa belajar dimanapun dan kapanpun"
                     ]
                 },
                 {
@@ -102,8 +153,15 @@
                     "description": "Kursus Bahasa Korea ini dirancang untuk membantu peserta memahami bahasa dan budaya Korea dengan cepat. Peserta akan belajar mengenai hangul, tata bahasa, serta kosakata yang umum digunakan, sekaligus menjelajahi aspek budaya yang kaya, termasuk musik, film, dan kuliner Korea.",
                     "description_other": "Kursus ini dirancang untuk membantu Anda memahami tata bahasa dan percakapan sehari-hari.",
                     "image": "img/course-lang.png",
-                    "points": [
-                       
+                    "points": [],
+                    "keunggulan": [
+                        "Pembelajaran fokus pelafalan, menulisan, mendengarkan, dan dialog percakapan",
+                        "Memberikan pelayanan terbaik terhadap siswa",
+                        "Free konsultasi materi dan dilengkapi modul pembelajaran",
+                        "Berfokus pada praktek",
+                        "Tutor profesional dan berpengalaman",
+                        "Tersedia kelas reguler & privat (1 guru 1 siswa)",
+                        "Bisa belajar dimanapun dan kapanpun"
                     ]
                 }
             ]
