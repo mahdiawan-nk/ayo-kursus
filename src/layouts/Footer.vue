@@ -1,13 +1,13 @@
 <template>
-    <footer id="footer" class="footer position-relative">
+    <footer id="footer" class="footer position-relative mt-2">
 
         <div class="container-fluid footer-top fixed-bottom">
             <div class="row row-cols-2 row-cols-md-4 g-4 features" style="background-color: rgb(37, 150, 190)">
                 <div class="col mt-1" @click="openNewTab('https://wa.me/6281298600000')">
-                    <div class="features-item">
-                        <i class="bi bi-whatsapp" style="color: #12a617;font-size: 40px;"></i>
+                    <div class="features-item" style="background-color: #12a617;">
+                        <i class="bi bi-whatsapp" style="color: white;font-size: 40px;"></i>
                         <h3 class="">
-                            <a href="javascript:void(0)" class="stretched-link">Daftar Sekarang</a>
+                            <a href="javascript:void(0)" class="stretched-link text-white">Daftar Sekarang</a>
                         </h3>
                     </div>
                 </div>
@@ -43,16 +43,6 @@
                                 class="stretched-link">Facebook</a></h3>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container copyright text-center mt-4">
-            <p>© <span class="text-white">Copyright</span> <strong class="px-1 sitename text-white">Ayo Kursus</strong>
-                <span class="text-white">All Rights Reserved</span>
-            </p>
-            <div class="credits text-white">
-                Designed by <a href="https://bootstrapmade.com/">Mahdi-NK</a> Distributed by <a
-                    href=“https://themewagon.com>ThemeWagon</a>
             </div>
         </div>
 
