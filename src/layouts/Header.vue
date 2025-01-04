@@ -2,7 +2,7 @@
     <header id="header" class="header d-flex align-items-center justify-content-center sticky-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-center">
             <router-link to="/" class="logo d-flex align-items-center">
-                <img src="/img/logo-1.png" alt="">
+                <img src="/img/logo-2.png" alt="">
                 <div class="overlay"></div>
                 <!-- <h1 class="sitename ms-2">ayokursus.com</h1> -->
             </router-link>
