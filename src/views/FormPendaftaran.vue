@@ -1,12 +1,11 @@
 <template>
-    <section id="contact" class="contact section pt-0">
+    <section id="contact" class="contact section pt-0 mb-5">
         <!-- Page Title -->
         <section id="hero" class="hero section dark-background" :style="{ 'min-height': '30vh' }">
 
             <img src="/img/slider/utama.jpg" alt="" data-aos="fade-in" style="object-fit: contain">
 
             <div class="container text-center" :style="{ 'margin-top': '200px' }">
-                <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
             </div>
 
         </section><!-- /Hero Section -->
@@ -14,7 +13,7 @@
             <!-- <h2>Courses</h2> -->
             <p>Formulir Pendaftaran Program Kursus</p>
         </div><!-- End Section Title -->
-        <div class="container p-5 rounded-2" data-aos="fade-up" data-aos-delay="100" style="background-color: #d546d9">
+        <div class="container p-5 rounded-2" data-aos="fade-up" data-aos-delay="100" style="background-color: rgb(37, 150, 190)">
 
             <div class="row gy-4">
                 <div class="col-lg-12">
@@ -100,7 +99,7 @@
                                 <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                                <button type="submit">Submit</button>
+                                <button type="submit" style="background-color: #2b960b">Submit</button>
                             </div>
 
                         </div>
@@ -258,5 +257,8 @@ export default {
     color: var(--default-color);
     background-color: white;
     border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+form label{
+    color: white;
 }
 </style>
