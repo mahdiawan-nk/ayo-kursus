@@ -17,7 +17,6 @@
             },
             icon:{
                 type: String,
-                default: 'bi-award-fill',
                 required: false,
             },
         }
