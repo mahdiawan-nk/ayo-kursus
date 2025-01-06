@@ -6,13 +6,13 @@
             <div class="swiper init-swiper ">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide d-flex align-items-center">
-                        <img src="img/slider/utama.jpg" alt="" data-aos="fade-in">
+                        <img src="img/slider/ayokursus1.png" alt="" data-aos="fade-in">
                     </div>
                     <div class="swiper-slide d-flex align-items-center">
-                        <img src="img/slider/utama1.jpg" alt="" data-aos="fade-in" class="">
+                        <img src="img/slider/ayokursus2.png" alt="" data-aos="fade-in" class="">
                     </div>
                     <div class="swiper-slide d-flex align-items-center">
-                        <img src="img/slider/utama2.jpg" alt="" data-aos="fade-in" class="">
+                        <img src="img/slider/ayokursus3.png" alt="" data-aos="fade-in" class="">
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
         </section><!-- /Courses Section -->
 
         <pages-testimoni></pages-testimoni>
-        <section id="contact" class="contact section">
+        <section id="contact" class="contact section mb-5">
             <!-- Section Title -->
             <div class="container section-title text-center" data-aos="fade-up">
                 <p>Alamat Lengkap Lembaga</p>
@@ -164,6 +164,13 @@
                                 <p> 0853-3339-9210 dan 0853-5524-6998</p>
                             </div>
                         </div>
+                        <!-- <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>sosial Media Lembaga</h3>
+                                <p> 0853-3339-9210 dan 0853-5524-6998</p>
+                            </div>
+                        </div> -->
                         <!-- End Info Item -->
 
                         <!-- End Info Item -->
@@ -179,6 +186,43 @@
                                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div><!-- End Contact Form -->
+                    <div class="col-lg-12">
+                        <h3 data-aos="fade-up" data-aos-delay="200" class="mb-4" style="text-align: center;">Sosial Media Lembaga</h3>
+                        <div class="row row-cols-2 row-cols-md-3 g-4 features">
+                            <div class="col mt-1 d-lg-none d-md-block">
+                                <div class="features-item">
+                                    <i class="bi bi-instagram" style="font-size: 40px;background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4); -webkit-background-clip: text; color: transparent;"></i>
+                                    <i class="bi bi-tiktok" style="font-size: 40px;color: #000000;"></i>
+                                    <i class="bi bi-facebook" style="font-size: 40px;background: linear-gradient(45deg, #1877F2, #3b5998); -webkit-background-clip: text; color: transparent;"></i>
+                                </div>
+                            </div>
+                            <div class="col mt-1 d-none d-lg-block" @click="openNewTab('https://www.instagram.com/kursusbahasadankomputer_sci/profilecard/?igsh=MjNlNXR5Mnd3aHRw')">
+                                <div class="features-item">
+                                    <i class="bi bi-instagram"
+                                        style="font-size: 40px;background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4); -webkit-background-clip: text; color: transparent;"></i>
+                                    <h3 class="d-none d-lg-block">
+                                        <a href="javascript:void(0)"
+                                            class="stretched-link">Instagaram</a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="col mt-1 d-none d-lg-block" @click="openNewTab('https://www.tiktok.com/@ayokursus?_t=8sTfZBCKRyU&_r=1')">
+                                <div class="features-item">
+                                    <i class="bi bi-tiktok" style="font-size: 40px;color: #000000;"></i>
+                                    <h3 class="d-none d-lg-block"><a href="javascript:void(0)"
+                                            class="stretched-link">Tiktok</a></h3>
+                                </div>
+                            </div>
+                            <div class="col mt-1 d-none d-lg-block" @click="openNewTab('https://www.facebook.com/profile.php?id=61567685371018&mibextid=ZbWKwL')">
+                                <div class="features-item">
+                                    <i class="bi bi-facebook"
+                                        style="font-size: 40px;background: linear-gradient(45deg, #1877F2, #3b5998); -webkit-background-clip: text; color: transparent;"></i>
+                                    <h3 class="d-none d-lg-block"><a href="javascript:void(0)"
+                                            class="stretched-link">Facebook</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -278,7 +322,7 @@ export default {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: fill;
     z-index: 1;
     background: rgb(37, 150, 190);
 }
