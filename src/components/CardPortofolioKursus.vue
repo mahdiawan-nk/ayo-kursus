@@ -3,7 +3,7 @@
 
         <!-- Section Title -->
         <div class="container section-title text-center" data-aos="fade-up">
-            <p class="text-white">Portofolio Kursus</p>
+            <p class="text-white" style="color: rgb(37, 150, 190);text-decoration: underline;font-size:1.25rem">Portofolio Kursus</p>
         </div><!-- End Section Title -->
 
         <div ref="swiperContainer" :class="{
