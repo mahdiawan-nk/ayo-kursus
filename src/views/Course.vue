@@ -67,9 +67,9 @@
             </section>
             <section id="features" class="features section mb-5" v-show="selectedType.name == typeCourse">
                 <!-- Section Title -->
-                <div class="container section-title text-center" data-aos="fade-up">
+                <div class="container section-title text-center pb-0" data-aos="fade-up">
                     <!-- <h2>Courses</h2> -->
-                    <p style="color:rgb(37, 150, 190);text-decoration: underline">Keunggulan Kursus</p>
+                    <p style="color: rgb(37, 150, 190);text-decoration: underline;font-size:1.25rem">Keunggulan Kursus</p>
                 </div><!-- End Section Title -->
                 <div class="container">
 
