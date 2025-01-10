@@ -24,7 +24,7 @@
                         <i class="bi bi-telephone flex-shrink-0"></i>
                         <div>
                             <h3>Nomor Telepon/Whatsapp</h3>
-                            <p>0823-8856-8452 dan 0822-8680-5678</p>
+                            <p>0823-8856-8452</p>
                         </div>
                     </div>
                     <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
@@ -38,21 +38,9 @@
                         <i class="bi bi-telephone flex-shrink-0"></i>
                         <div>
                             <h3>Nomor Telepon/Whatsapp</h3>
-                            <p> 0853-3339-9210 dan 0853-5524-6998</p>
+                            <p> 0853-3339-9210</p>
                         </div>
                     </div>
-                    <!-- <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                        <i class="bi bi-telephone flex-shrink-0"></i>
-                        <div>
-                            <h3>sosial Media Lembaga</h3>
-                            <p> 0853-3339-9210 dan 0853-5524-6998</p>
-                        </div>
-                    </div> -->
-                    <!-- End Info Item -->
-
-                    <!-- End Info Item -->
-
-                    <!-- End Info Item -->
 
                 </div>
 
@@ -74,7 +62,7 @@
                                 <i class="bi bi-instagram"
                                     style="font-size: 40px;background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4); -webkit-background-clip: text; color: transparent;"></i>
                                 <h3 class="d-none d-lg-block">
-                                    <a href="javascript:void(0)" class="stretched-link">Instagaram</a>
+                                    <a href="https://www.instagram.com/kursusbahasadankomputer_sci/profilecard/?igsh=MjNlNXR5Mnd3aHRw" class="stretched-link">Instagaram</a>
                                 </h3>
                             </div>
                         </div>
@@ -82,7 +70,7 @@
                             @click="openNewTab('https://www.tiktok.com/@ayokursus?_t=8sTfZBCKRyU&_r=1')">
                             <div class="features-item justify-content-center">
                                 <i class="bi bi-tiktok" style="font-size: 40px;color: #000000;"></i>
-                                <h3 class="d-none d-lg-block"><a href="javascript:void(0)"
+                                <h3 class="d-none d-lg-block"><a href="https://www.tiktok.com/@ayokursus?_t=8sTfZBCKRyU&_r=1"
                                         class="stretched-link">Tiktok</a></h3>
                             </div>
                         </div>
@@ -91,7 +79,7 @@
                             <div class="features-item justify-content-center">
                                 <i class="bi bi-facebook"
                                     style="font-size: 40px;background: linear-gradient(45deg, #1877F2, #3b5998); -webkit-background-clip: text; color: transparent;"></i>
-                                <h3 class="d-none d-lg-block"><a href="javascript:void(0)"
+                                <h3 class="d-none d-lg-block"><a href="https://www.facebook.com/profile.php?id=61567685371018&mibextid=ZbWKwL"
                                         class="stretched-link">Facebook</a></h3>
                             </div>
                         </div>
@@ -107,6 +95,12 @@
 
 <script>
 export default {
-    name: 'ContactView'
+    name: 'ContactView',
+    methods: {
+        openNewTab(url) {
+            // window.open(url, '_blank', 'noopener,noreferrer');
+            window.location.href = url
+        }
+    }
 }
 </script>
