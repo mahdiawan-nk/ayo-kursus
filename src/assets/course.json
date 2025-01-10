@@ -4,7 +4,7 @@
             "id": 1,
             "name": "kursus-komputer",
             "title": "Kursus Komputer",
-            "description": "Program Pembelajaran Kursus Komputer",
+            "description": "Jenis Program Pembelajaran",
             "image": "img/course/kursuskomputer.jpg",
             "types": [
                 {
@@ -71,7 +71,7 @@
             "id": 2,
             "name": "kursus-bahasa",
             "title": "Kursus Bahasa",
-            "description": "Program pembelajaran kursus Bahasa",
+            "description": "Jenis Program Pembelajaran",
             "image": "img/course/kursusbahasa.jpg",
             "types": [
                 {
