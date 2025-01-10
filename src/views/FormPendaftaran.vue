@@ -1,14 +1,5 @@
 <template>
     <section id="contact" class="contact section pt-0 mb-5">
-        <!-- Page Title -->
-        <section id="hero" class="hero section dark-background" :style="{ 'min-height': '30vh' }">
-
-            <img src="/img/slider/utama.jpg" alt="" data-aos="fade-in" style="object-fit: contain">
-
-            <div class="container text-center" :style="{ 'margin-top': '200px' }">
-            </div>
-
-        </section><!-- /Hero Section -->
         <div class="container section-title text-center pt-2" data-aos="fade-up">
             <!-- <h2>Courses</h2> -->
             <p style="color: rgb(37, 150, 190);text-decoration: underline;font-size:1.25rem">Formulir Pendaftaran Program Kursus</p>
@@ -112,18 +103,18 @@
         </div>
 
     </section><!-- /Contact Section -->
-    <ContactView></ContactView>
+
 </template>
 
 <script>
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 import axios from 'axios';
-import ContactView from '@/components/ContactView.vue';
+
 export default {
     name: 'FormPendaftaran',
     components: {
-        ContactView
+ 
     },
     data() {
         return {
