@@ -9,9 +9,9 @@
             </div>
 
         </section><!-- /Hero Section -->
-        <div class="container section-title text-center" data-aos="fade-up">
+        <div class="container section-title text-center pt-2" data-aos="fade-up">
             <!-- <h2>Courses</h2> -->
-            <p>Formulir Pendaftaran Program Kursus</p>
+            <p style="color: rgb(37, 150, 190);text-decoration: underline;font-size:1.25rem">Formulir Pendaftaran Program Kursus</p>
         </div><!-- End Section Title -->
         <div class="container p-5 rounded-2" data-aos="fade-up" data-aos-delay="100"
             style="background-color: rgb(37, 150, 190)">
