@@ -1,15 +1,27 @@
 <template>
-    <div></div>
+    <Transition name="slide-fade">
+        <div class="popup-wrapper" v-show="showed">
+            <div class="popup rounded-2" :class="{ 'popup-slide-in': showed, 'popup-slide-out': !showed }">
+                <div class="popup-content">
+                    <img class="popup-icon" src="/img/ayo-kursus.png" alt="Icon" />
+                    <div class="popup-info">
+                        <h2>{{ selectRegistrant.name }}</h2>
+                        <p class="m-0">Telah Mendaftar Program {{ selectRegistrant.course }}</p>
+                        <p class="m-0">{{ selectRegistrant.time }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Transition>
 </template>
 
 <script>
-import { toast } from 'vue3-toastify';
-import 'vue3-toastify/dist/index.css';
-
 export default {
     name: 'ToastNotif',
+
     data() {
         return {
+            showed: false,
             registrants: [
                 { name: 'Ahmad Fauzan', course: 'Komputer Dasar', time: '2 jam lalu' },
                 { name: 'Siti Nurhaliza', course: 'Desain Grafis', time: '3 jam lalu' },
@@ -37,82 +49,126 @@ export default {
                 { name: 'Sari Anggraini', course: 'Bahasa Mandarin', time: '20 menit lalu' },
                 { name: 'Andi Firmansyah', course: 'Komputer Dasar', time: '25 menit lalu' },
             ],
+            selectRegistrant: {},
         };
     },
     mounted() {
         setInterval(() => {
-            // Ambil data acak dari daftar registrants
+            this.showed = true; // Tampilkan notifikasi
             const randomRegistrant = this.registrants[Math.floor(Math.random() * this.registrants.length)];
+            this.selectRegistrant = randomRegistrant;
 
-            const content = `
-        <div class="d-flex align-items-center">
-          <div class="me-1">
-            <img src="/img/ayo-kursus.png" alt="Logo" class="rounded-circle mx-auto d-block" style="width: 50px; height: 50px; object-fit: cover;" />
-          </div>
-          <div class="d-flex flex-column mx-3">
-            <h3 class=" fw-bold mb-1 text-white" style="font-size: 14px;">${randomRegistrant.name}</h3>
-            <span class="mb-1 text-white" style="font-size: 12px;">Telah mendaftar program kursus ${randomRegistrant.course} ${randomRegistrant.time}</span>
-          </div>
-        </div>
-      `;
-
-            toast(content, {
-                position: toast.POSITION.TOP_LEFT,
-                autoClose: 2000, // Durasi tampilan toast
-                closeOnClick: false, // Toast bisa ditutup secara manual
-                dangerouslyHTMLString: true, // Mendukung HTML di dalam konten
-                closeButton: false,
-                hideProgressBar: true,
-            });
-        }, 5000); // Interval waktu 5 detik
+            setTimeout(() => {
+                this.showed = false; // Sembunyikan notifikasi setelah 1.5 detik
+                this.selectRegistrant = {};
+            }, 3500); // Waktu untuk menyembunyikan
+        }, 6500);
     },
 };
 </script>
 
 
-<style>
-.Toastify__toast {
-    background: rgb(37, 150, 190);
-    height: 120px;
-    border-radius: 4px;
-    box-shadow: 0 1px 10px 0 #0000001a, 0 2px 15px 0 #0000000d;
-    box-sizing: border-box;
-    cursor: pointer;
-    direction: ltr;
-    display: flex;
-    font-family: var(--toastify-font-family);
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    max-height: var(--toastify-toast-max-height);
-    min-height: var(--toastify-toast-min-height);
-    overflow: hidden;
-    padding: 8px;
-    position: relative;
-    z-index: 0;
+
+
+<style scoped>
+.hidden {
+    display: none;
 }
 
-.Toastify__toast-body {
-    height: 50px;
-    align-items: center;
-    display: flex;
-    flex: 1 1 auto;
-    margin: auto 0;
-    padding: 10px;
-    white-space: pre-wrap;
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
 }
 
-.Toastify__toast-container {
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.popup-wrapper {
+    position: fixed;
+    top: 5%;
     left: 10px;
-    margin-top: 75px;
-    padding: 0;
+    height: 35vw;
+    width: 35%;
+    /* Overlay */
+    display: flex;
+    align-items: flex-start;
+    z-index: 10000;
 }
 
-@media only screen and (max-width: 480px) {
-    .Toastify__toast-container {
-        left: 10px;
-        margin-top: 75px;
-        padding: 0;
-        width: 70vw;
+.popup {
+    position: relative;
+    background-color: rgb(37, 150, 190);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    /* Default state (hidden) */
+    transition: transform 0.5s ease;
+}
+
+.popup h2 {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.popup p {
+    color: white;
+    font-size: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup-content {
+    display: flex;
+    align-items: center;
+    width: 15vw;
+}
+
+.popup-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.popup-info {
+    flex: 1;
+}
+
+.popup-slide-in {
+    transform: translateX(0);
+    /* Visible state */
+}
+
+.popup-slide-out {
+    transform: translateX(-100%);
+    /* Hidden state */
+}
+
+@media screen and (max-width: 768px) {
+    .popup-wrapper {
+        top: 10%;
+    }
+    .popup-content {
+        display: flex;
+        align-items: center;
+        width: 50vw;
     }
 }
 </style>
