@@ -16,13 +16,13 @@
                     </div>
                 </div>
             </div>
-            
+
 
         </section><!-- /Hero Section -->
         <section id="about" class="about section">
             <div class="container section-title text-center" data-aos="fade-up">
                 <!-- <h2>Courses</h2> -->
-                <p>Ayo Kursus</p>
+                <p style="color: rgb(37, 150, 190)"><u>Ayo Kursus</u></p>
             </div>
             <div class="container text-center">
                 <!-- <h2 data-aos="fade-up" data-aos-delay="100" style="color: #d546d9">AYO KURSUS</h2> -->
@@ -52,26 +52,26 @@
             </div><!-- End Section Title -->
 
             <div class="container">
-
-                <div v-for="list in courses" :key="list" class="row my-5 p-4 rounded-start-2"
-                    style="background-color: rgb(37, 150, 190)">
-                    <div class="col-lg-6 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                        <img :src="list.image" class="img-fluid w-75 d-block mx-auto" alt="">
+                <div class="d-flex rounded-2 my-2 container-card" v-for="list in courses" :key="list">
+                    <div class="img-card">
+                        <img :src="list.image" alt="..." class="">
                     </div>
-                    <div class="col-lg-6 order-2 order-lg-2 content" data-aos="fade-up" data-aos-delay="200">
-                        <h3 style="color:#080807;">{{ list.title }}</h3>
-                        <p class="fst-italic">
+                    <div class="content ms-3" style="width: 100%!important">
+                        <h4 style="color:#080807;">{{ list.title }}</h4>
+                        <p>
                             {{ list.description }}
                         </p>
                         <ul>
-                            <li v-for="item in list.types" :key="item"><i class="bi bi-check-circle"></i> <span>{{
+                            <li v-for="item in list.types" :key="item"><i class="bi bi-check"></i> <span>{{
                                 item.title }}</span></li>
                         </ul>
-                        <router-link :to="{ name: 'Course', params: { type: list.name } }" class="read-more shadow" style="background-color: #2b960b;"><span>Selengkapnya</span><i class="bi bi-arrow-right"></i></router-link>
+                        <router-link :to="{ name: 'Course', params: { type: list.name } }"
+                            class="read-more shadow"><span>Selengkapnya</span><i
+                                class="bi bi-arrow-right"></i></router-link>
                     </div>
-
                 </div>
             </div>
+
 
         </section>
         <!-- /About Section -->
@@ -81,16 +81,16 @@
             <!-- Section Title -->
             <div class="container section-title text-center" data-aos="fade-up">
                 <!-- <h2>Courses</h2> -->
-                <p>Keunggulan Program</p>
+                <p style="color: rgb(37, 150, 190);text-decoration: underline">Keunggulan Program</p>
             </div><!-- End Section Title -->
             <div class="container">
 
                 <div class="row gy-4">
-                    <!-- <div class="col-lg-2"></div> -->
-                    <div class="col-lg-12">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
                         <div class="row">
                             <card-keunggulan-program v-for="keunggulan in keunggulanProgram" :key="keunggulan.title"
-                                :title="keunggulan.title" :icon="keunggulan.icon"></card-keunggulan-program>
+                                :title="keunggulan.title" :icon="'bi-check-circle-fill'"></card-keunggulan-program>
                         </div>
                     </div>
                 </div>
@@ -100,129 +100,13 @@
         </section><!-- /Features Section -->
 
         <!-- Courses Section -->
-        <section id="courses" class="events section" style="background-color: rgb(37, 150, 190)">
 
-            <!-- Section Title -->
-            <div class="container section-title text-center" data-aos="fade-up">
-                <p class="text-white">Portofolio Kursus</p>
-            </div><!-- End Section Title -->
+        <card-portofolio-kursus :list="portofolioKursus"></card-portofolio-kursus>
 
-            <div class="container">
 
-                <div class="row">
-                    <card-portofolio-kursus v-for="portofolio in portofolioKursus" :key="portofolio.title"
-                        :title="portofolio.title" :subtitle="'Kursus Secara ' + portofolio.description"
-                        :image="portofolio.image"></card-portofolio-kursus>
-
-                </div>
-
-            </div>
-
-        </section><!-- /Courses Section -->
 
         <pages-testimoni></pages-testimoni>
-        <section id="contact" class="contact section mb-5">
-            <!-- Section Title -->
-            <div class="container section-title text-center" data-aos="fade-up">
-                <p>Alamat Lengkap Lembaga</p>
-            </div><!-- End Section Title -->
-
-            <!-- End Google Maps -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-4">
-                        <h3 data-aos="fade-up" data-aos-delay="200" class="mb-4">Get In Touch</h3>
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-geo-alt flex-shrink-0"></i>
-                            <div>
-                                <h3>Kantor Pusat</h3>
-                                <p>Jl.HR Soebrantas Komplek Bumi Rizki Permai Blok L, No.5 (Samping Awal Bros
-                                    Panam). Kota Pekanbaru – Riau 28292</p>
-                            </div>
-                        </div>
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bi bi-telephone flex-shrink-0"></i>
-                            <div>
-                                <h3>Nomor Telepon/Whatsapp</h3>
-                                <p>0823-8856-8452 dan 0822-8680-5678</p>
-                            </div>
-                        </div>
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-geo-alt flex-shrink-0"></i>
-                            <div>
-                                <h3>Kantor Cabang</h3>
-                                <p>Jl.Paus Ujung No.3 ( Simpang 3 Arifin Ahmad ) Kota Pekanbaru – Riau 28293</p>
-                            </div>
-                        </div>
-                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bi bi-telephone flex-shrink-0"></i>
-                            <div>
-                                <h3>Nomor Telepon/Whatsapp</h3>
-                                <p> 0853-3339-9210 dan 0853-5524-6998</p>
-                            </div>
-                        </div>
-                        <!-- <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bi bi-telephone flex-shrink-0"></i>
-                            <div>
-                                <h3>sosial Media Lembaga</h3>
-                                <p> 0853-3339-9210 dan 0853-5524-6998</p>
-                            </div>
-                        </div> -->
-                        <!-- End Info Item -->
-
-                        <!-- End Info Item -->
-
-                        <!-- End Info Item -->
-
-                    </div>
-
-                    <div class="col-lg-8">
-                        <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-                            <iframe style="border:0; width: 100%; height: 400px;"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6883608303033!2d101.3906544!3d0.46245159999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a9a1adf272f1%3A0xb7ae731a91a4a402!2sKURSUS%20KOMPUTER%20DAN%20BAHASA%20PEKANBARU!5e0!3m2!1sid!2sid!4v1735193244355!5m2!1sid!2sid"
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div><!-- End Contact Form -->
-                    <div class="col-lg-12">
-                        <h3 data-aos="fade-up" data-aos-delay="200" class="mb-4" style="text-align: center;">Sosial Media Lembaga</h3>
-                        <div class="row row-cols-3 row-cols-md-3 g-4 features">
-                            
-                            <div class="col mt-1" @click="openNewTab('https://www.instagram.com/kursusbahasadankomputer_sci/profilecard/?igsh=MjNlNXR5Mnd3aHRw')">
-                                <div class="features-item justify-content-center">
-                                    <i class="bi bi-instagram"
-                                        style="font-size: 40px;background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4); -webkit-background-clip: text; color: transparent;"></i>
-                                    <h3 class="d-none d-lg-block">
-                                        <a href="javascript:void(0)"
-                                            class="stretched-link">Instagaram</a>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="col mt-1 " @click="openNewTab('https://www.tiktok.com/@ayokursus?_t=8sTfZBCKRyU&_r=1')">
-                                <div class="features-item justify-content-center">
-                                    <i class="bi bi-tiktok" style="font-size: 40px;color: #000000;"></i>
-                                    <h3 class="d-none d-lg-block"><a href="javascript:void(0)"
-                                            class="stretched-link">Tiktok</a></h3>
-                                </div>
-                            </div>
-                            <div class="col mt-1 " @click="openNewTab('https://www.facebook.com/profile.php?id=61567685371018&mibextid=ZbWKwL')">
-                                <div class="features-item justify-content-center">
-                                    <i class="bi bi-facebook"
-                                        style="font-size: 40px;background: linear-gradient(45deg, #1877F2, #3b5998); -webkit-background-clip: text; color: transparent;"></i>
-                                    <h3 class="d-none d-lg-block"><a href="javascript:void(0)"
-                                            class="stretched-link">Facebook</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
+        <contact-view></contact-view>
     </main>
 
 </template>
@@ -231,8 +115,8 @@
 import CardKeunggulanProgram from '../components/CardKeunggulanProgram.vue'
 import CardPortofolioKursus from '../components/CardPortofolioKursus.vue'
 import PagesTestimoni from '../components/PagesTestimoni.vue'
+import ContactView from '@/components/ContactView.vue';
 import coursesData from '@/assets/course.json';
-import portofolioData from '@/assets/portofolio.json';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 // const coursesData = require('src\assets\course,json');
@@ -241,7 +125,8 @@ export default {
     components: {
         CardKeunggulanProgram,
         CardPortofolioKursus,
-        PagesTestimoni
+        PagesTestimoni,
+        ContactView
     },
     data() {
         return {
@@ -258,7 +143,6 @@ export default {
                 { title: 'Belajar Bisa Dikantor Atau Guru Datang Kerumah', icon: 'bi-globe' },
                 { title: 'Bisa belajar dimanapun dan kapanpun', icon: 'bi-globe' },
             ],
-            portofolioKursus: portofolioData.portofolio,
             swiperConfig: {
                 direction: 'horizontal',
                 loop: true,
@@ -293,10 +177,74 @@ export default {
 </script>
 
 <style scoped>
-.content h3,
-.content p,
-.content ul li span {
+.about .section-title {
+    padding-bottom: 1rem;
+}
+
+.about .section-title p {
+    color: rgb(37, 150, 190) !important;
+    text-decoration: underline;
+}
+
+.about .container-card {
+    background: rgb(37, 150, 190);
+    padding: 3rem;
+}
+
+.about .img-card img {
+    width: 100% !important;
+    margin: 0 auto;
+}
+
+.about .content h4 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    border: black solid 1px;
+    text-align: center;
+    background-color: white;
+    padding: 1px 0px;
+}
+
+.about .content p {
+    font-size: 2rem;
+    margin-left: 5px;
     color: white;
+    margin-bottom: 10px;
+}
+
+.about .content ul {
+    margin-left: 5px;
+}
+
+.about .content ul li {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.about .content ul li i,
+.about .content ul li span {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.about .content .read-more {
+    background: rgb(43, 150, 11);
+    color: var(--contrast-color);
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .content .read-more:hover {
+    background: rgb(43, 150, 11);
+    color: var(--contrast-color);
 }
 
 .hero {
@@ -339,6 +287,7 @@ export default {
     padding: 20px;
     color: white;
 }
+
 @media screen and (max-width: 768px) {
     .hero img {
         position: absolute;
@@ -350,10 +299,69 @@ export default {
         z-index: 1;
         background: rgb(37, 150, 190);
     }
-}
-.about .content ul i {
-    font-size: 1.25rem;
-    margin-right: 4px;
-    color: white;
+
+    .about .section-title p {
+        color: rgb(37, 150, 190) !important;
+        text-decoration: underline;
+        font-size: 1.25rem;
+    }
+
+    .about .container-card {
+        background: rgb(37, 150, 190);
+        padding: 0.5rem;
+    }
+
+    .about .img-card img {
+        width: 100% !important;
+        margin: 0 auto;
+        height: 50vw;
+    }
+
+    .about .content h4 {
+        font-weight: 700;
+        font-size: 22px;
+        border: black solid 1px;
+        text-align: center;
+        background-color: white;
+        padding: 1px 0px;
+    }
+
+    .about .content p {
+        font-size: 15px;
+        margin-left: 5px;
+        color: white;
+        margin-bottom: 3px;
+    }
+
+    .about .content ul {
+        margin-left: 5px;
+    }
+
+    .about .content ul li {
+        color: white;
+        font-size: 15px;
+        padding-bottom: 0px;
+    }
+
+    .about .content ul li i,
+    .about .content ul li span {
+        color: white;
+        font-size: 15px;
+    }
+
+    .about .content .read-more {
+        background: rgb(43, 150, 11);
+        color: var(--contrast-color);
+        font-family: var(--heading-font);
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 5px 15px 5px 15px;
+        border-radius: 5px;
+        transition: 0.3s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 </style>
