@@ -19,14 +19,15 @@
 
 
         </section><!-- /Hero Section -->
-        <section id="about" class="about section">
+        <section id="about" class="about section pt-4 pb-1">
             <div class="container section-title text-center" data-aos="fade-up">
                 <!-- <h2>Courses</h2> -->
                 <p style="color: rgb(37, 150, 190)"><u>Ayo Kursus</u></p>
             </div>
             <div class="container text-center">
                 <!-- <h2 data-aos="fade-up" data-aos-delay="100" style="color: #d546d9">AYO KURSUS</h2> -->
-                <p data-aos="fade-up" data-aos-delay="200" class="fst-italic fs-3" style="text-align: justify">
+                <p data-aos="fade-up" data-aos-delay="200" class="fst-italic"
+                    style="text-align: justify;font-size: 1.2rem !important">
                     Ayo Kursus merupakan program kursus bagi pelajar hingga umum yang bertujuan untuk
                     meningkatkan potensi diri atau sosfkill dibidang kompetensi teretntu sesuai minat dan
                     bakat.
@@ -45,14 +46,14 @@
             </div>
         </section>
         <!-- About Section -->
-        <section id="about" class="about section">
+        <section id="about" class="about section pt-2 pb-3">
             <div class="container section-title text-center" data-aos="fade-up">
                 <!-- <h2>Courses</h2> -->
                 <p>Ayo Pilih Kursus Kesukaan Mu</p>
             </div><!-- End Section Title -->
 
             <div class="container">
-                <div class="d-flex rounded-2 my-2 container-card" v-for="list in courses" :key="list">
+                <div class="d-flex rounded-2 my-2 mt-1 container-card" v-for="list in courses" :key="list">
                     <div class="img-card">
                         <img :src="list.image" alt="..." class="">
                     </div>
@@ -77,15 +78,15 @@
         <!-- /About Section -->
 
         <!-- Features Section -->
-        <section id="features" class="features section">
+        <section id="features" class="features section pt-2">
             <!-- Section Title -->
-            <div class="container section-title text-center" data-aos="fade-up">
+            <div class="container section-title text-center pb-0" data-aos="fade-up">
                 <!-- <h2>Courses</h2> -->
-                <p style="color: rgb(37, 150, 190);text-decoration: underline">Keunggulan Program</p>
+                <p style="color: rgb(37, 150, 190);text-decoration: underline;font-size:1.25rem">Keunggulan Program</p>
             </div><!-- End Section Title -->
             <div class="container">
 
-                <div class="row gy-4">
+                <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-6">
                         <div class="row">
@@ -300,10 +301,11 @@ export default {
         background: rgb(37, 150, 190);
     }
 
-    .about .section-title p {
+    .section-title p {
         color: rgb(37, 150, 190) !important;
         text-decoration: underline;
         font-size: 1.25rem;
+        padding-bottom:1rem;
     }
 
     .about .container-card {
