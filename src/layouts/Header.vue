@@ -1,4 +1,14 @@
 <template>
+    <!-- <div class="d-flex rounded-2 my-2 bg-primary notif-card" >
+        <div class="img-card">
+            <img src="/img/ayo-kursus.png" alt="..." class="rounded-circle">
+        </div>
+        <div class="content ms-3" style="width: 100%!important">
+            <h4 style="color:#080807;">aaaaa</h4>
+            <p>
+            </p>
+        </div>
+    </div> -->
     <header id="header" class="header d-flex align-items-center justify-content-center sticky-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-center">
             <router-link to="/" class="logo d-flex align-items-center">
@@ -39,6 +49,14 @@ export default {
 </script>
 
 <style scoped>
+div .notif-card {
+    position: absolute;
+    z-index: 111111;
+    width: 25%;
+    height: 25vw;
+    top : 10%;
+    left: 10px;
+}
 .header {
     background-color: rgb(37, 150, 190);
 
@@ -47,5 +65,4 @@ export default {
 .header h1 {
     color: #fff;
 }
-
 </style>
