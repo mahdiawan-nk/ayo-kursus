@@ -1,8 +1,8 @@
 <template>
-    <section id="testimonials" class="testimonials section">
+    <section id="testimonials" class="testimonials section pt-3 pb-1">
 
         <!-- Section Title -->
-        <div class="container section-title text-center" data-aos="fade-up">
+        <div class="container section-title text-center" data-aos="fade-up" style="padding-bottom:3rem">
             <p style="color: rgb(37, 150, 190);text-decoration: underline;font-size:1.25rem">Testimoni Program Kursus</p>
         </div><!-- End Section Title -->
 
