@@ -103,7 +103,7 @@ export default {
 
 .popup {
     position: relative;
-    background-color: rgb(37, 150, 190);
+    background-color: rgb(255,191,0);
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
     padding: 5px;
     box-sizing: border-box;
@@ -113,13 +113,13 @@ export default {
 }
 
 .popup h2 {
-    color: white;
+    color: black;
     font-size: 14px;
     margin-bottom: 5px;
 }
 
 .popup p {
-    color: white;
+    color: black;
     font-size: 10px;
 }
 
