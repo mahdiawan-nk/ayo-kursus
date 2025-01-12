@@ -1,7 +1,7 @@
 <template>
-    <section id="contact" class="contact section" style="margin-bottom: 150px;">
+    <section id="contact" class="contact section pt-5 pb-1" style="margin-bottom: 150px;">
         <!-- Section Title -->
-        <div class="container section-title text-center pb-2" data-aos="fade-up">
+        <div class="container section-title text-center" data-aos="fade-up" style="padding-bottom:3rem">
             <p style="color: rgb(37, 150, 190);text-decoration: underline;font-size:1.25rem">Alamat Lembaga</p>
         </div><!-- End Section Title -->
 
@@ -45,16 +45,16 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
                         <iframe style="border:0; width: 100%; height: 400px;"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6883608303033!2d101.3906544!3d0.46245159999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a9a1adf272f1%3A0xb7ae731a91a4a402!2sKURSUS%20KOMPUTER%20DAN%20BAHASA%20PEKANBARU!5e0!3m2!1sid!2sid!4v1735193244355!5m2!1sid!2sid"
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div><!-- End Contact Form -->
-                <div class="col-lg-12">
+                <div class="col-lg-12 mt-0">
                     <h3 data-aos="fade-up" data-aos-delay="200" class="mb-4" style="text-align: center;">Sosial
                         Media Lembaga</h3>
-                    <div class="row row-cols-3 row-cols-md-3 g-4 features">
+                    <div class="row row-cols-3 row-cols-md-3 g-4 features pt-4">
 
                         <div class="col mt-1"
                             @click="openNewTab('https://www.instagram.com/kursusbahasadankomputer_sci/profilecard/?igsh=MjNlNXR5Mnd3aHRw')">
