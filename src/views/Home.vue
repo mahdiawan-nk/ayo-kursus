@@ -16,8 +16,6 @@
                     </div>
                 </div>
             </div>
-
-
         </section><!-- /Hero Section -->
         <section id="about" class="about section pt-4 pb-1">
             <div class="container section-title text-center" data-aos="fade-up">
@@ -46,7 +44,7 @@
             </div>
         </section>
         <!-- About Section -->
-        <section id="about" class="about section pt-2 pb-3">
+        <section class="about section pt-4 pb-1">
             <div class="container section-title text-center" data-aos="fade-up">
                 <!-- <h2>Courses</h2> -->
                 <p>Ayo Pilih Kursus Kesukaan Mu</p>
@@ -78,9 +76,9 @@
         <!-- /About Section -->
 
         <!-- Features Section -->
-        <section id="features" class="features section pt-2">
+        <section id="features" class="features section pt-4 pb-1">
             <!-- Section Title -->
-            <div class="container section-title text-center pb-0" data-aos="fade-up">
+            <div class="container section-title text-center pb-2" data-aos="fade-up">
                 <!-- <h2>Courses</h2> -->
                 <p style="color: rgb(37, 150, 190);text-decoration: underline;font-size:1.25rem">Keunggulan Program</p>
             </div><!-- End Section Title -->
@@ -185,6 +183,7 @@ export default {
 .about .section-title p {
     color: rgb(37, 150, 190) !important;
     text-decoration: underline;
+    font-size: 1.25rem;
 }
 
 .about .container-card {
