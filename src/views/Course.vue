@@ -195,6 +195,12 @@ section, .section {
     animation: bounce-in-out 0.6s ease-in-out both;
 }
 
+@media screen and (max-width: 768px) {
+    .hero img{
+        width: 100%;
+        object-fit: fill;
+    }
+}
 @keyframes bounce-in-out {
     0% {
         transform: scale(0.8);
