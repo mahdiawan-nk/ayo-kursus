@@ -289,6 +289,9 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+    .hero{
+        min-height: 30vh;
+    }
     .hero img {
         position: absolute;
         inset: 0;
