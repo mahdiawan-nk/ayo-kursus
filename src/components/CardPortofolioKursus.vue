@@ -47,7 +47,7 @@ export default {
                 loop: true,
                 speed: 600,
                 autoplay: {
-                    delay: 200000,
+                    delay: 2000,
                 },
                 slidesPerView: 'auto',
                 pagination: {
