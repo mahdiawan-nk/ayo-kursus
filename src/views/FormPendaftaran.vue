@@ -136,7 +136,7 @@ export default {
                 user_id: 'y0zw9pMUlcdSox9cF',
                 from_name: 'AYO KURSUS',
             },
-            programDiminati: ['Kursus Komputer Dasar', 'Kursus Desain Grafis', 'Kursus Programmer', 'Kursus Bahasa Arab', 'Kursus Bahasa Jepang', 'Kursus Bahasa Inggris', 'Kursus Bahasa Korea', 'Kursus Bahasa Mandarin'],
+            programDiminati: ['Kursus Komputer Dasar', 'Kursus Desain Grafis', 'Kursus Programmer', 'Kursus Bahasa Arab', 'Kursus Bahasa Jepang', 'Kursus Bahasa Inggris', 'Kursus Bahasa Korea', 'Kursus Bahasa Mandarin','Akuntansi Perpajakan'],
             programPembelajaran: ['Kelas', 'Privat'],
             sistemPertemuan: ['Offline', 'Online']
         }
