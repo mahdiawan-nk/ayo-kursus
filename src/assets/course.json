@@ -165,6 +165,53 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": 1,
+            "name": "kursus-akuntansi-perpajakan",
+            "title": "Kursus Akuntansi Perpajakan",
+            "description": "Jenis Program Pembelajaran",
+            "image": "img/course/kursuskomputer.jpg",
+            "types": [
+                {
+                    "id": 1,
+                    "name": "perhitungan-akuntansi",
+                    "title": "Perhitungan Akuntansi",
+                    "description": "Kursus Akuntansi Perpajakan dirancang untuk memberikan pemahaman mendalam tentang konsep dasar akuntansi serta penerapan prinsip-prinsip perpajakan dalam dunia bisnis. Kursus ini membekali peserta dengan keterampilan dan pengetahuan yang dibutuhkan untuk mengelola kewajiban perpajakan dengan efektif dan efisien, sambil memastikan kepatuhan terhadap regulasi perpajakan yang berlaku.",
+                    "description_other": "Kursus ini ditujukan bagi para profesional di bidang akuntansi, staf pajak, pemilik usaha kecil dan menengah, atau siapa saja yang ingin menguasai topik akuntansi perpajakan dan meningkatkan keterampilan dalam mengelola pajak secara profesional.",
+                    "image": "img/course/office.jpg",
+                    "points": [
+                        
+                    ],
+                    "keunggulan": [
+                        "Fulk praktek 100℅",
+                        "Fasilitas komputer disediakan",
+                        "Materi belajar siap untuk dunia kerja",
+                        "Tersedia kelas reguler dan privat (1 guru 1 siswa)",
+                        "Dapat sertifikat selesai kursus",
+                        "Bergaransi sampai mahir",
+                        "Bisa belajar dimanapun dan kapanpun"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "perpajakan",
+                    "title": "Perpajakan",
+                    "description": "Di program ini, peserta akan mempelajari cara menggunakan berbagai aplikasi desain populer seperti Canva, CorelDRAW, Photoshop, Illustrator dan AutoCAD. Kursus ini dirancang untuk memberikan keterampilan praktis dalam membuat karya digital, seperti gambar, logo, desain banner, dan banyak lagi",
+                    "description_other": "Cocok untuk semua usia, kursus ini membuka peluang bagi siapa saja yang ingin mengasah kreativitas dan keterampilan desain mereka di dunia digital!",
+                    "image": "img/course/desaingrafis.jpg",
+                    "points": [],
+                    "keunggulan": [
+                        "Fulk praktek 100℅",
+                        "Fasilitas komputer disediakan",
+                        "Materi belajar siap untuk dunia kerja",
+                        "Tersedia kelas reguler dan privat (1 guru 1 siswa)",
+                        "Dapat sertifikat selesai kursus",
+                        "Bergaransi sampai mahir",
+                        "Bisa belajar dimanapun dan kapanpun"
+                    ]
+                }
+            ]
         }
     ]
 }
