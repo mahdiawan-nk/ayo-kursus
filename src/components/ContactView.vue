@@ -46,7 +46,7 @@
 
                 <div class="col-lg-8">
                     <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <iframe style="border:0; width: 100%; height: 400px;"
+                        <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6883608303033!2d101.3906544!3d0.46245159999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a9a1adf272f1%3A0xb7ae731a91a4a402!2sKURSUS%20KOMPUTER%20DAN%20BAHASA%20PEKANBARU!5e0!3m2!1sid!2sid!4v1735193244355!5m2!1sid!2sid"
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -62,7 +62,8 @@
                                 <i class="bi bi-instagram"
                                     style="font-size: 40px;background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4); -webkit-background-clip: text; color: transparent;"></i>
                                 <h3 class="d-none d-lg-block">
-                                    <a href="https://www.instagram.com/kursusbahasadankomputer_sci/profilecard/?igsh=MjNlNXR5Mnd3aHRw" class="stretched-link">Instagaram</a>
+                                    <a href="https://www.instagram.com/kursusbahasadankomputer_sci/profilecard/?igsh=MjNlNXR5Mnd3aHRw"
+                                        class="stretched-link">Instagaram</a>
                                 </h3>
                             </div>
                         </div>
@@ -70,7 +71,8 @@
                             @click="openNewTab('https://www.tiktok.com/@ayokursus?_t=8sTfZBCKRyU&_r=1')">
                             <div class="features-item justify-content-center">
                                 <i class="bi bi-tiktok" style="font-size: 40px;color: #000000;"></i>
-                                <h3 class="d-none d-lg-block"><a href="https://www.tiktok.com/@ayokursus?_t=8sTfZBCKRyU&_r=1"
+                                <h3 class="d-none d-lg-block"><a
+                                        href="https://www.tiktok.com/@ayokursus?_t=8sTfZBCKRyU&_r=1"
                                         class="stretched-link">Tiktok</a></h3>
                             </div>
                         </div>
@@ -79,7 +81,8 @@
                             <div class="features-item justify-content-center">
                                 <i class="bi bi-facebook"
                                     style="font-size: 40px;background: linear-gradient(45deg, #1877F2, #3b5998); -webkit-background-clip: text; color: transparent;"></i>
-                                <h3 class="d-none d-lg-block"><a href="https://www.facebook.com/profile.php?id=61567685371018&mibextid=ZbWKwL"
+                                <h3 class="d-none d-lg-block"><a
+                                        href="https://www.facebook.com/profile.php?id=61567685371018&mibextid=ZbWKwL"
                                         class="stretched-link">Facebook</a></h3>
                             </div>
                         </div>
@@ -104,3 +107,14 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+@media screen and (max-width: 768px) {
+    iframe {
+        border: 0;
+        width: 100%;
+        height: 220px;
+        padding: 5px 18px;
+    }
+}
+</style>
