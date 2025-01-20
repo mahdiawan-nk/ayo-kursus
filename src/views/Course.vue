@@ -13,9 +13,9 @@
 
             </section><!-- /Hero Section -->
 
-            <section id="features" class="features section mt-4">
+            <section id="features" class="features section mt-4" >
 
-                <div class="container">
+                <div class="container" v-show="this.routeType != 'kursus-akuntansi-perpajakan'">
 
                     <div class="row row-cols-1 g-4 features" :class="rowColsClass">
                         <div v-for="list in course[0].types" :key="list.id" class="col my-1" data-aos="fade-up"
@@ -65,7 +65,7 @@
 
 
             </section>
-            <section id="features" class="features section mb-5" v-show="selectedType.name == typeCourse">
+            <section id="features" class="features section" v-show="selectedType.name == typeCourse">
                 <!-- Section Title -->
                 <div class="container section-title text-center pb-0" data-aos="fade-up">
                     <!-- <h2>Courses</h2> -->
