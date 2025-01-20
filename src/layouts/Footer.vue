@@ -2,10 +2,10 @@
     <footer id="footer" class="footer-top fixed-bottom">
 
         <!-- <div class="container "> -->
-        <div class="d-flex  align-items-center py-2" style="background-color: rgb(37, 150, 190)">
-            <div class="ps-3 d-flex justify-content-center align-items-center" @click="openNewTab('https://wa.me/6285333399210')">
+        <div class="d-flex flex-row-reverse align-items-center py-2">
+            <div class="pe-4 d-flex  justify-content-center align-items-center" @click="openNewTab('https://wa.me/6285333399210')">
                 <img src="/img/wa-logo.png" alt="" class="wa-logo">
-                <span class="ms-2 fw-semibold text-white d-none d-lg-block">Ruang Konsultasi</span>
+                <span class="ms-2 fw-semibold text-white d-none">Ruang Konsultasi</span>
             </div>
 
         </div>
