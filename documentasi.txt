@@ -1,0 +1,10 @@
+1.Node.js versi 20 atau lebih baru
+2.npm atau yarn sebagai package manager
+3.Browser modern (Chrome, Firefox, Edge, dll)
+
+Langkah Instalasi
+1.extract ke dalam folder kerja anda
+2.buka terminal sesuai direktoru folder kerja
+3.install atau update dependensi dengan cara npm install untuk install, npm update untuk update
+4 ketikan npm run serve untuk jalankan aplikasi dilingkungan pengembangan
+5.untuk produksi build ketikan npm run build, hasil build akan ada di folder dist
