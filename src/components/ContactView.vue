@@ -2,7 +2,7 @@
     <section id="contact" class="contact section pt-5 pb-1" style="margin-bottom: 150px;" hidden>
         <!-- Section Title -->
         <div class="container section-title text-center" data-aos="fade-up" style="padding-bottom:3rem">
-            <p style="color: rgb(37, 150, 190);text-decoration: underline;font-size:1.25rem">Alamat Lembaga</p>
+            <p style="color: rgb(37, 150, 190);text-decoration: underline;font-size:1.25rem">Alamat Lembagaa</p>
         </div><!-- End Section Title -->
 
         <!-- End Google Maps -->
