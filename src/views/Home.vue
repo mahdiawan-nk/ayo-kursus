@@ -56,7 +56,10 @@
                         <img :src="list.image" alt="..." class="">
                     </div>
                     <div class="content ms-3" style="width: 100%!important">
+                        <router-link :to="{ name: 'Course', params: { type: list.name } }">
                         <h4 style="color:#080807;">{{ list.title }}</h4>
+
+                        </router-link>
                         <p>
                             {{ list.description }}
                         </p>
