@@ -1,15 +1,9 @@
 <template>
-    <!-- <div class="d-flex rounded-2 my-2 bg-primary notif-card" >
-        <div class="img-card">
-            <img src="/img/ayo-kursus.png" alt="..." class="rounded-circle">
-        </div>
-        <div class="content ms-3" style="width: 100%!important">
-            <h4 style="color:#080807;">aaaaa</h4>
-            <p>
-            </p>
-        </div>
-    </div> -->
-    <header id="header" class="header d-flex align-items-center justify-content-center sticky-top">
+    
+    <header id="header" class="header d-flex flex-column align-items-center justify-content-center sticky-top">
+        <marquee behavior="scroll" direction="left">
+            <span class="text-white">Tersedia Pembelajaran Online dan Offline</span>
+        </marquee>
         <div class="container-fluid container-xl d-flex align-items-center justify-content-center">
             <router-link to="/" class="logo d-flex align-items-center">
                 <img src="/img/logo-2.png" alt="">
